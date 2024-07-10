@@ -1,0 +1,15 @@
+pip install -r requirements.txt
+
+install anaconda
+
+add it to environment system path
+
+
+conda env create --file environment.yml
+
+
+conda activate GazeTracking
+
+
+- start the Ai
+python example.py
