@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معاون</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('img/خلفيه.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.8); /* خلفية شبه شفافة */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px; /* تقليل حجم الهيدر */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .logo img {
+            height: 40px; /* تقليل حجم الشعار */
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+        .welcome-section {
+            text-align: center;
+            margin-top: 100px; /* تقليل المسافة العلوية بعد تصغير الهيدر */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 100px); /* اجعل القسم يأخذ كامل الارتفاع المتبقي */
+        }
+        .welcome-section h1 {
+            font-size: 36px; /* تكبير حجم النص */
+            margin-bottom: 20px;
+        }
+        .orange-text {
+            color: #F48F18;
+        }
+        .welcome-section p {
+            font-size: 20px; /* تكبير حجم النص */
+            margin-bottom: 30px;
+        }
+        .login-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #F48F18;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .login-button:hover {
+            background-color: #d97916;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="logo"> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">عن مُعاون</a></li>
+                <li><a href="libraryyy.html">مكتبتي</a></li>
+                <li><a href="#">احصائياتي</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome-section">
+            <h1>مرحباً بـ أصحاب العقول <span class="orange-text">الفريدة</span></h1>
+            <p>أنا مُعاون شريكك الذكي سأكون معك خطوة بخطوة لتحسين مذاكرتك</p>
+            <a href="login.html" class="login-button">تسجيل دخول</a>
+        </section>
+    </main>
+</body>
+</html>
