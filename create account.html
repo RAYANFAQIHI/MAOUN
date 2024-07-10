@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب جديد</title>
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="img/logo.png" alt="logo">
+    </div>
+    <div class="container">
+        <form class="account-form">
+            <h2>إنشاء حساب جديد</h2>
+            <input type="text" placeholder="اسم المستخدم" required>
+            <input type="email" placeholder="البريد الإلكتروني" required>
+            <input type="password" placeholder="كلمة المرور" required>
+            <label>مستوى الاضطراب</label>
+            <div class="radio-group">
+                <label><input type="radio" name="level" value="خفيف">خفيف</label>
+                <label><input type="radio" name="level" value="متوسط">متوسط</label>
+                <label><input type="radio" name="level" value="شديد">شديد</label>
+                <label><input type="radio" name="level" value="لا أعاني">لا أعاني</label>
+            </div>
+            <button type="submit">إنشاء حساب</button>
+        </form>
+    </div>
+</body>
+</html>

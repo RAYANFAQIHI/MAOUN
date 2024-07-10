@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+header {
+    background: transparent;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between; /* تعديل لوضع الشعار في الجهة اليمنى */
+    align-items: center; /* لضبط الشعار في منتصف الرأس عمودياً */
+}
+
+.logo img {
+    max-width: 100px; /* تعديل حجم الشعار */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-button {
+    background-color: #ff7e29;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.login-button:hover {
+    background-color: #e66e20;
+}
+
+.welcome-section {
+    max-width: 600px;
+    background: transparent;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.welcome-section::before {
+    content: '';
+    background: url('img/ob.bng') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.2; /* Adjust the opacity as needed */
+    z-index: -1;
+}
+
+.welcome-section h1 {
+    color: #663399;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.orange-text {
+    color: #ff7e29;
+}
