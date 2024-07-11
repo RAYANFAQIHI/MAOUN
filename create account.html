@@ -3,28 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>إنشاء حساب جديد</title>
+    <title>إنشاء حساب</title>
     <link rel="stylesheet" href="create.css">
 </head>
 <body>
-    <div class="logo">
-        <img src="img/logo.png" alt="logo">
-    </div>
     <div class="container">
-        <form class="account-form">
-            <h2>إنشاء حساب جديد</h2>
-            <input type="text" placeholder="اسم المستخدم" required>
-            <input type="email" placeholder="البريد الإلكتروني" required>
-            <input type="password" placeholder="كلمة المرور" required>
-            <label>مستوى الاضطراب</label>
-            <div class="radio-group">
-                <label><input type="radio" name="level" value="خفيف">خفيف</label>
-                <label><input type="radio" name="level" value="متوسط">متوسط</label>
-                <label><input type="radio" name="level" value="شديد">شديد</label>
-                <label><input type="radio" name="level" value="لا أعاني">لا أعاني</label>
-            </div>
-            <button type="submit">إنشاء حساب</button>
-        </form>
+        <div class="header">
+            <img src="img/logoo.png" alt="Logo" class="logo">
+        </div>
+        <div class="content">
+            <h1>مستوى التشتت</h1>
+            <form>
+                <div class="option">
+                    <input type="radio" id="light" name="focus-level" value="light" checked>
+                    <label for="light">خفيف</label>
+                    <p>يمكنني التركيز بشكل جيد لمدة تصل إلى 45 دقيقة.</p>
+                </div>
+                <div class="option">
+                    <input type="radio" id="medium" name="focus-level" value="medium">
+                    <label for="medium">متوسط</label>
+                    <p>يمكنني الحفاظ على التركيز لمدة تتراوح بين 20 - 30 دقيقة.</p>
+                </div>
+                <div class="option">
+                    <input type="radio" id="severe" name="focus-level" value="severe">
+                    <label for="severe">شديد</label>
+                    <p>يمكنني الحفاظ على التركيز لمدة تتراوح بين 5 - 10 دقائق.</p>
+                </div>
+                <div class="option">
+                    <input type="radio" id="unknown" name="focus-level" value="unknown">
+                    <label for="unknown">لا أعلم</label>
+                    <p>ادخل على <a href="https://forms.gle/URZVyXqfQVEX5hQu8" target="_blank">الرابط</a> لمعرفة مستوى التشتت لديك.</p>
+                </div>
+                <button type="submit" class="create-account-btn">إنشاء حساب</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
